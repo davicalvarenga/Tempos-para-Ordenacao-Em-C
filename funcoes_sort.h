@@ -13,7 +13,6 @@ void vetorAleatorio(int *vetor, int tamanho);
 void vetorImprimir(int *vetor, int tamanho);
 void vetorDecrescente(int *vetor, int tamanho);
 void vetorCrescente(int *vetor, int tamanho);
-double selectionTempo (int *vetor, int tamanho);
 
 // Funções de ordenação
 void swap(int *a, int *b);

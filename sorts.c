@@ -48,16 +48,6 @@ void vetorDecrescente(int *vet, int N) {
     }
 }
 
-
-double selectionTempo (int *vetor, int tamanho) {
-    int inicio = clock();
-    selectionsort(vetor, tamanho);
-    int fim = clock();
-    
-    double tempo = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-    return tempo;
-}
-
 // Imprime o vetor
 void vetorImprimir(int *vetor, int tamanho) {
     for (int i=0 ; i<tamanho ; i++) {
@@ -90,7 +80,6 @@ void selectionsort(int *v, int N) {
         }
     }
 }
-
 
 // Insertion Sort
 void insertionsort(int*v, int N) {
@@ -219,7 +208,6 @@ int partition(int*v, int p, int r) {
     }
 }
 
-
 // Função Counting Sort
 void countingsort(int *T, int N, int k, int *V) {
     int i;
@@ -260,7 +248,6 @@ void countingsort(int *T, int N, int k, int *V) {
     free(C);
     free(A);
 }
-
 
 // Radix Sort
 void radixsort(int *V, int N) {
