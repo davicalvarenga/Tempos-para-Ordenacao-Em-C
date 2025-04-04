@@ -52,22 +52,40 @@ int main() {
     printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, insertionsort, vetorCrescente));
     printf("-----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");   
     
-    printf("------------------------------------------------------------------- Bubble Sort Aleatório -------------------------------------------------------------------\n");
-    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesort, vetorAleatorio)); 
-    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesort, vetorAleatorio));
-    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesort, vetorAleatorio));
+    printf("------------------------------------------------------------------- Bubble Sort C/ Variavel Aleatório -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesortc, vetorAleatorio)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesortc, vetorAleatorio));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesortc, vetorAleatorio));
     printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
     
-    printf("------------------------------------------------------------------- Bubble Sort Decrescente -------------------------------------------------------------------\n");
-    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesort, vetorDecrescente)); 
-    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesort, vetorDecrescente));
-    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesort, vetorDecrescente));
+    printf("------------------------------------------------------------------- Bubble Sort C/ Variavel Decrescente -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesortc, vetorDecrescente)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesortc, vetorDecrescente));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesortc, vetorDecrescente));
     printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
     
-    printf("------------------------------------------------------------------- Bubble Sort Crescente -------------------------------------------------------------------\n");
-    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesort, vetorCrescente)); 
-    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesort, vetorCrescente));
-    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesort, vetorCrescente));
+    printf("------------------------------------------------------------------- Bubble Sort C/ Variavel Crescente -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesortc, vetorCrescente)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesortc, vetorCrescente));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesortc, vetorCrescente));
+    printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+        
+    printf("------------------------------------------------------------------- Bubble Sort S/ Variavel Aleatório -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesorts, vetorAleatorio)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesorts, vetorAleatorio));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesorts, vetorAleatorio));
+    printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+    
+    printf("------------------------------------------------------------------- Bubble Sort S/ Variavel Decrescente -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesorts, vetorDecrescente)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesorts, vetorDecrescente));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesorts, vetorDecrescente));
+    printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+    
+    printf("------------------------------------------------------------------- Bubble Sort S/ Variavel Crescente -------------------------------------------------------------------\n");
+    printf("tempo necessario para realizacao de 1k: %lf\n", timer(vet1, vet1k, bubblesorts, vetorCrescente)); 
+    printf("tempo necessario para realizacao de 10k: %lf\n", timer(vet2, vet10k, bubblesorts, vetorCrescente));
+    printf("tempo necessario para realizacao de 100k: %lf\n", timer(vet3, vet100k, bubblesorts, vetorCrescente));
     printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
     
     printf("------------------------------------------------------------------- Merge Sort Aleatório -------------------------------------------------------------------\n");

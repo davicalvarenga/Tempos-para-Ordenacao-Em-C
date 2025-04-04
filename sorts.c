@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdbool.h>
 #include "funcoes_sort.h"
 
 
@@ -93,17 +94,32 @@ void insertionsort(int*v, int N) {
     }
 }
 
-// Bubble Sort
-void bubblesort(int *v, int N) {
-    int i,j,aux, K;
-    for(i=0; i<N-1; i++) {
-        K=0;
+// Bubble Sort COM Variavel de controle
+void bubblesortc(int *v, int N) {
+    int i, j, aux;
+    bool k = true;
+    for(i = 0; i < N - 1 && k; i++) {
+        K = false;
         for(j=0; j<N-1; j++) {
-            if(v[j]>v[j+1]){
-                K=1;
-                aux=v[j];
-                v[j]=v[j+1];
-                v[j+1]=aux;
+            if(v[j] > v[j+1]){
+                K = true;
+                aux = v[j];
+                v[j] = v[j+1];
+                v[j+1] = aux;
+            }
+        }
+    }
+}
+
+// Bubble Sort SEM Variavel de controle
+void bubblesorts(int *v, int N) {
+    int i,j,aux;
+    for(i = 0; i < N - 1; i++) {
+        for(j = 0; j < N-1; j++) {
+            if(v[j]> v [j+1]){
+                aux = v[j];
+                v[j] = v[j+1];
+                v[j+1] = aux;
             }
         }
     }
