@@ -20,7 +20,7 @@ double timerMergeIQuick(int *vet, int tamanho, int inicio, int fim, SortFunction
     clock_t inicioClock = clock();
     sortfunc(vet, inicio, fim); // Chama o algoritmo de ordenação passado como parâmetro
     clock_t fimClock = clock();
-    return (double)(fim - inicio) / CLOCKS_PER_SEC;
+    return (double)(fimClock - inicioClock) / CLOCKS_PER_SEC;
 }
 
 double timerCounting(int *vet, int tamanho, int k, SortFunctionType sorttype) { 
@@ -94,15 +94,15 @@ void insertionsort(int*v, int N) {
     }
 }
 
-// Bubble Sort COM Variavel de controle
+// Bubble Sort COM variável de controle
 void bubblesortc(int *v, int N) {
     int i, j, aux;
     bool k = true;
     for(i = 0; i < N - 1 && k; i++) {
-        K = false;
-        for(j=0; j<N-1; j++) {
-            if(v[j] > v[j+1]){
-                K = true;
+        k = false;  
+        for(j = 0; j < N - 1 - i; j++) { 
+            if(v[j] > v[j+1]) {
+                k = true;
                 aux = v[j];
                 v[j] = v[j+1];
                 v[j+1] = aux;
@@ -110,6 +110,7 @@ void bubblesortc(int *v, int N) {
         }
     }
 }
+
 
 // Bubble Sort SEM Variavel de controle
 void bubblesorts(int *v, int N) {
